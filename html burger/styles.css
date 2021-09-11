@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Tungsten Rounded", sans-serif;
+}
+@font-face {
+  font-family: "Tungsten Rounded";
+  src: local("Tungsten Rounded Book"), local("Tungsten-Rounded-Book"),
+    url("TungstenRounded-Book.woff2") format("woff2"),
+    url("TungstenRounded-Book.woff") format("woff"),
+    url("TungstenRounded-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/******* side menu styling ********/
+
+.side-menu {
+  list-style: none;
+  border: 1px #ddd solid;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+}
+
+.side-menu li {
+  font-size: 18px;
+  line-height: 2.4em;
+  border-bottom: dotted 1px #ddd;
+}
+
+.side-menu li:last-child {
+  border: none;
+}
+
+.side-menu li a {
+  color: black;
+  text-decoration: none;
+  font-family: "Tungsten Rounded", sans-serif;
+  font-weight: 500;
+}
+
+.side-menu li a:hover {
+  color: rgb(75, 202, 219);
+}
+
+/******* Navbar styling ********/
+
+.navbar {
+  overflow: auto;
+  background-color: #ffe88c;
+  /* background-color: #faf8f2; */
+  padding-top: 10px;
+}
+.navbar div {
+  float: left;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  float: right;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 15px 15px;
+  font-family: "Tungsten Rounded";
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.logo-title {
+  font-size: 11px;
+}
+
+.logo-burger {
+  font-size: 13px;
+}
+.navbar ul li a:hover {
+  color: rgb(71, 184, 199);
+}
+/*******************************************************************************************************/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 750px auto;
+  background-color: #ffe88c;
+  padding: 10px;
+}
+.grid-item1 {
+  text-align: center;
+  padding: 80px;
+}
+
+.burger-Img {
+  width: 510px;
+  position: relative;
+  left: 50px;
+  z-index: 200;
+}
+.css-Img {
+  width: 230px;
+  position: absolute;
+  left: 550px;
+  top: 145px;
+}
+
+.html-Img {
+  width: 350px;
+  position: absolute;
+  left: -10px;
+  top: 320px;
+  z-index: 250;
+}
+
+h2 {
+  font-size: 90px;
+  font-weight: bolder;
+  text-shadow: 3px 7px 0 rgba(0, 0, 0, 0.15);
+}
+
+.grid-item {
+  padding-top: 45px;
+}
+
+.p-burger {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
