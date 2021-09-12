@@ -8,35 +8,38 @@
 
 img {
   width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: inline-block;
   margin-top: 100px;
-  height: 50px;
 }
-.name {
-  transform: translateY(-90%);
-  display: inline-block;
-}
+
 .cards {
   background: linear-gradient(85deg, #434343, #262626);
   padding: 20px;
-  width: 400px;
-
+  min-width: 270px;
   border-radius: 10px;
-  height: 360px;
+  height: 330px;
   color: white;
-  margin-left: -25px;
+  margin-left: -85px;
   border: linear-gradient(85deg, #434343, #262626) solid 3px;
-
-  transition: transform 0.5s;
-}
-.cards:hover {
-  /* transform: rotate(6deg); */
-  transform: rotate(6deg) translatex(-20px);
+  /*  transition: transform,margin-left 0.5s;
+ */
+  transition: all 0.5s;
 }
 
 .cards:first-child {
   margin: 0;
+}
+.cards:hover {
+  /* transform: rotate(6deg); */
+  transform: rotate(6deg) translateX(-70px);
+  margin-left: 60px;
+}
+.name {
+  transform: translateY(-90%);
+  display: inline-block;
+  padding-left: 6px;
 }
 span {
   color: gray;
@@ -50,4 +53,5 @@ h2 {
 .links a {
   color: #ff7a18;
   text-decoration: none;
+  padding-left: 10px;
 }
