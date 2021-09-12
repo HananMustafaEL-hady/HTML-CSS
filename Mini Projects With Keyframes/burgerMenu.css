@@ -163,8 +163,8 @@ body {
 }
 .menu > div {
   background: var(--overlay-color);
-  width: 200vw;
-  height: 200vw;
+  width: 300vw;
+  height: 300vw;
   border-radius: 50%;
   display: flex;
   flex: none;
