@@ -93,19 +93,20 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: var(--primary-color);
   display: flex;
   align-content: center;
   justify-content: center;
+  border-radius: 2px;
 }
 /* Hamburger Line */
 
 .menu-wrap .hamburger > div {
   position: relative;
   /* flex: none; */
-  width: 100%;
+  width: 50%;
   background: #fff;
   display: flex;
   align-items: center;
@@ -145,5 +146,68 @@ body {
 }
 
 .toggler:checked:hover + .hamburger > div {
-  transform: rotate(230deg);
+  transform: rotate(300deg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.menu > div {
+  background: var(--overlay-color);
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+  display: flex;
+  flex: none;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+.menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.menu > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu > div > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.4s ease;
+}
+
+.menu > div > ul > li > a:hover {
+  color: var(--secondary-color);
+}
+
+/* show Menu */
+.toggler:checked ~ .menu {
+  visibility: visible;
+}
+.toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+.toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
 }
