@@ -5,3 +5,22 @@ $main-color: #ffe88c;
 $light-color: #f4f4f4;
 $dark-color: #333;
 $medium-color: #ccc;
+// grid
+
+@mixin grid-items-columns(
+  $columns-num,
+  $columns-width,
+  $justify-content: center,
+  $align-items: center,
+  $align-content: center,
+  $text-align: center,
+  $grid-gap: 0px
+) {
+  display: grid;
+  grid-template-columns: repeat($columns-num, $columns-width);
+  justify-content: $justify-content;
+  align-items: $align-items;
+  align-content: $align-content;
+  grid-gap: $grid-gap;
+  text-align: $text-align;
+}
